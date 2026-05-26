@@ -1,0 +1,27 @@
+
+export function checkNumber(numb) {
+
+    const isDivisibleBy3AND5 = numb % 3 == 0 && numb % 5 == 0
+    
+    if (isDivisibleBy3AND5) {
+        return 'FizzBuzz';
+    }
+
+    const isDivisibleBy3 = numb % 3 == 0;
+
+    if (isDivisibleBy3) {
+        return 'Fizz';
+    }
+
+    const isDivisibleBy5 = numb % 5 == 0;
+
+    if (isDivisibleBy5) {
+        return 'Buzz';
+    }
+
+    const isIndivisibleby3AND5 = numb;
+
+    if (isIndivisibleby3AND5) {
+        return numb;
+    }
+}
