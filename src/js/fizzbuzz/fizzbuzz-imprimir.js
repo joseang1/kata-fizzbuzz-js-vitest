@@ -1,0 +1,1 @@
+import { checkNumber } from './fizzbuzz.js';

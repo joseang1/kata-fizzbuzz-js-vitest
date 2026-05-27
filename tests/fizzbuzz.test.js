@@ -25,7 +25,7 @@ describe('FizzBuzz', () => {
 
 describe('FizzBuzz', () => {
 
-    test('should return FizzBuZZ', () => {
+    test('should return FizzBuzz', () => {
         const n = 15;
         const expected = 'FizzBuzz';
         const result = checkNumber(n);
