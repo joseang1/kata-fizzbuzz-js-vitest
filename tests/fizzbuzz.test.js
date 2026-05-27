@@ -37,7 +37,17 @@ describe('', () => {
 
     test('should return numb', () => {
         const n = 7;
-        const expected = 'numb';
+        const expected = '';
+        const result = checkNumber(n);
+        expect(result).toBe(expected);
+    })
+})
+
+describe('error', () => {
+
+    test('should return an error', () => {
+        const n = 'hola';
+        const expected = 'No es un número. ¡Booh!'
         const result = checkNumber(n);
         expect(result).toBe(expected);
     })

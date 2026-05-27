@@ -1,5 +1,9 @@
 
 export function checkNumber(numb) {
+    
+    if (typeof numb !== 'number') {
+        return 'No es un número. ¡Booh!'
+    }
 
     const isDivisibleBy3AND5 = numb % 3 == 0 && numb % 5 == 0
     
@@ -22,6 +26,6 @@ export function checkNumber(numb) {
     const isIndivisibleby3AND5 = numb;
 
     if (isIndivisibleby3AND5) {
-        return numb;
+        return '';
     }
 }
